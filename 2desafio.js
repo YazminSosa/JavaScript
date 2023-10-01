@@ -1,5 +1,6 @@
 const datos = require ('./users.json').users
 
+//------------------------------------
 
 let cantidadDePersonas = datos.length;
 
@@ -17,8 +18,6 @@ datos.forEach(usuario => {
     contadorMenoresDe30++;
   }
 });
-
-
 
 // -----------Reduce--------------
 totaldepersonas = datos.reduce(
@@ -39,7 +38,7 @@ totaldepersonas = datos.reduce(
     console.log(nombresYApellidosMujeres);
     console.log(`La cantidad de personas menores de 30 años es: ${contadorMenoresDe30}`);
     console.log(`- Cantidad de hombres: ${totaldepersonas.hombres}`);
-  console.log(`- Cantidad de mujeres: ${totaldepersonas.mujeres}`);
+    console.log(`- Cantidad de mujeres: ${totaldepersonas.mujeres}`);
   
 
 
